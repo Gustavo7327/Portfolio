@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio // Gustavo Chaves</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900">
+    <header class="flex justify-evenly items-center p-4 h-20 sticky top-0 bg-gray-900">
+        <img src="logo2.svg" alt="" width="180">
+        <nav>
+            <ul class="flex justify-between text-white pr-4 space-x-16">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#certificados">Certificados</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="flex justify-center items-center" id="sobre">
+            <div class="flex justify-center flex-col h-screen mr-20 ">
+                <h1 class="text-white  text-4xl justify-self-start">
+                    Olá! Eu sou o
+                </h1>
+                <span class="text-[#008000] text-justify text-4xl justify-self-start">Gustavo Chaves</span>
+                <p class="text-white text-justify text-1xl justify-self-start font-semibold">Desenvolvedor Back-end</p>
+                <a href="#contato" class="mt-6 px-6 py-3 bg-[#008000] text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-green-600 transition duration-300 self-start">
+                    Entrar em contato
+                </a>
+            </div>
+            <div>
+                <img src="Tux.svg" width="250px" alt="">
+            </div>
+        </section>
+
+        <section id="sobre" class="flex flex-col justify-center px-32 pb-10">
+            <h2 class="text-white text-4xl text-center mt-20">Sobre mim</h2>
+            <p class="text-white font-normal text-justify text-lg mt-6">
+                Meu nome é Gustavo Chaves e sou desenvolvedor de software com foco em back-end. Atualmente estou terminando o ensino médio com uma formação de técnico em desenvolvimento de sistemas. Tenho ampla experiência na criação de aplicações utilizando Java, desde projetos simples com interface gráfica até APIs REST com Spring Boot, sempre utilizando as pŕaticas recomendadas do mercado de trabalho. Além disso, tenho contato com projetos de front-end e experiência com linguagens como Python, C++, Kotlin e PHP.
+            </p>
+        </section>
+
+        <section id="projetos"></section>
+
+        <section id="certificados"></section>
+
+        <section id="contato">
+            <h2 class="text-white text-4xl text-center mt-20">Contato</h2>
+            <div class="flex flex-row items-center justify-center mt-6 space-x-12">
+                <a href="https://www.linkedin.com/in/gustavo-chaves-89a1ba29b/"><svg width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4.00098 3H20.001C20.5533 3 21.001 3.44772 21.001 4V20C21.001 20.5523 20.5533 21 20.001 21H4.00098C3.44869 21 3.00098 20.5523 3.00098 20V4C3.00098 3.44772 3.44869 3 4.00098 3ZM5.00098 5V19H19.001V5H5.00098ZM7.50098 9C6.67255 9 6.00098 8.32843 6.00098 7.5C6.00098 6.67157 6.67255 6 7.50098 6C8.3294 6 9.00098 6.67157 9.00098 7.5C9.00098 8.32843 8.3294 9 7.50098 9ZM6.50098 10H8.50098V17.5H6.50098V10ZM12.001 10.4295C12.5854 9.86534 13.2665 9.5 14.001 9.5C16.072 9.5 17.501 11.1789 17.501 13.25V17.5H15.501V13.25C15.501 12.2835 14.7175 11.5 13.751 11.5C12.7845 11.5 12.001 12.2835 12.001 13.25V17.5H10.001V10H12.001V10.4295Z"></path></svg></a>
+                <a href="https://github.com/Gustavo7327"><svg width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg></i></a>
+                <a href="mailto:gustavosilva712493@gmail.com"><svg width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
