@@ -19,8 +19,8 @@
         </nav>
     </header>
     <main>
-        <section class="flex justify-center items-center" id="sobre">
-            <div class="flex justify-center flex-col h-screen mr-20 ">
+        <section class="flex justify-center items-center">
+            <div class="flex justify-center flex-col h-screen mr-20 gap-1">
                 <h1 class="text-white  text-4xl justify-self-start">
                     Olá! Eu sou o
                 </h1>
@@ -42,7 +42,37 @@
             </p>
         </section>
 
-        <section id="projetos"></section>
+        <section id="projetos" class="flex flex-col justify-center px-12 pb-10">
+            <h2 class="text-white text-4xl text-center mt-20">Projetos</h2>
+            <div class="flex flex-row justify-evenly mt-6 gap-12 flex-wrap items-center">
+                <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-32 ">
+                    <h3 class="text-white">Encurtador de URLs</h3>
+                    <p class="text-gray-400">Projeto feito usando Spring Boot, MySQL e Thymeleaf</p>
+                    <a class="text-[#008000]" href="https://github.com/Gustavo7327/shorter-url-api">Visualizar Projeto</a>
+                </article>
+                <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-32">
+                    <h3 class="text-white">Piano Tutor</h3>
+                    <p class="text-gray-400">Piano feito em C++ para arduino.</p>
+                    <a class="text-[#008000]" href="https://github.com/Gustavo7327/PianoTutor">Visualizar Projeto</a>
+                </article>
+                <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-32">
+                    <h3 class="text-white">Calculadora IP</h3>
+                    <p class="text-gray-400">Calculadora feita em Kotlin para dispositivos móveis.</p>
+                    <a class="text-[#008000]" href="https://github.com/Gustavo7327/IPCalculator">Visualizar Projeto</a>
+                </article>
+                <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-32">
+                    <h3 class="text-white">Bloqueador de Sites</h3>
+                    <p class="text-gray-400">O projeto foi desenvolvido utilizando o Qt Framework em C++</p>
+                    <a class="text-[#008000]" href="https://github.com/Gustavo7327/WebsiteBlocker">Visualizar Projeto</a>
+                </article>
+                <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-32">
+                    <h3 class="text-white">Vacine Já</h3>
+                    <p class="text-gray-400">Projeto de Administração de Vacinas feito em PHP</p>
+                    <a class="text-[#008000]" href="https://github.com/Gustavo7327/Projeto-Vacina">Visualizar Projeto</a>
+                </article>
+            </div>      
+        </section>
+
 
         <section id="certificados"></section>
 
