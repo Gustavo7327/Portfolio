@@ -10,6 +10,14 @@
         document.addEventListener('DOMContentLoaded', () => {
             const btnMenu = document.getElementById('menu-mobile');
             const menuMobile = document.getElementById('menu-mobile-links');
+            const linksMobile = document.querySelectorAll('.link');
+
+            linksMobile.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuMobile.classList.remove('translate-y-0');
+                    menuMobile.classList.add('translate-y-[200vh]');
+                });
+            });
     
             btnMenu.addEventListener('click', () => {
                 // Alterna o menu mobile
@@ -37,7 +45,7 @@
 <body class="bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-white">
     <header class="flex items-center justify-center sticky top-0 bg-gray-200 dark:bg-gray-900 w-full">
         <div class="flex justify-between items-center p-4 h-20 w-full max-w-[750px] ">
-            <img src="logo.svg" alt="" width="180" class="md:w-120px w-[180px] block">
+            <img src="logo.svg" alt="" width="180" class="w-[180px] block" onclick="window.location.href='#hero'">
         
             <!-- Botão de menu mobile -->
             <button id="menu-mobile" class="md:hidden flex items-center justify-center w-10 h-10  text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-800 rounded-lg transition-colors">
@@ -57,35 +65,35 @@
             </nav>
         
             <!-- Navegação mobile -->
-            <nav id="menu-mobile-links" class="fixed top-20 right-0 w-40  transform translate-y-[200vh] transition-transform duration-300 border-2 border-gray-500 rounded-md mr-5">
+            <nav id="menu-mobile-links" class="fixed top-20 right-0 w-40  transform translate-y-[200vh] transition-transform duration-300 border-2 border-gray-500 rounded-md mr-5 bg-[#1e2939]">
                 <ul class="flex flex-col items-center gap-6 py-8">
-                    <li><a href="#sobre" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Sobre</a></li>
-                    <li><a href="#projetos" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Projetos</a></li>
-                    <li><a href="#certificados" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Certificados</a></li>
-                    <li><a href="#contato" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Contato</a></li>
+                    <li class="link"><a href="#sobre" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Sobre</a></li>
+                    <li class="link"><a href="#projetos" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Projetos</a></li>
+                    <li class="link"><a href="#certificados" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Certificados</a></li>
+                    <li class="link"><a href="#contato" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-gray-300 transition-colors">Contato</a></li>
                 </ul>
             </nav>
         </div>
         
     </header>
     <main>
-        <section class="flex justify-center items-center ml-8">
+        <section id="hero" class="flex justify-evenly items-center ml-8">
             <div class="flex justify-center flex-col h-screen mr-12 gap-1">
-                <h1 class="text-gray-900 dark:text-white  text-4xl justify-self-start">
+                <h1 class="text-gray-900 dark:text-white text-4xl justify-self-start">
                     Olá! Eu sou o
                 </h1>
                 <span class="text-[#008000] text-justify text-4xl justify-self-start">Gustavo Chaves</span>
-                <p class="text-black dark:text-white text-justify text-1xl justify-self-start font-semibold">Desenvolvedor Back-end</p>
+                <p class="text-black dark:text-white text-justify text-2xl justify-self-start font-medium">Desenvolvedor Back-end</p>
                 <a href="#contato" class="mt-6 px-6 py-3 bg-[#008000] text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-green-600 transition duration-300 self-start">
                     Entrar em contato
                 </a>
             </div>
-            <div>
-                <img src="pinguim.png" width="250px" alt="">
+            <div class="w-50 hidden sm:block">
+                <img src="pinguim.png"  alt="">
             </div>
         </section>
 
-        <section id="sobre" class="flex flex-col justify-center px-12 pb-10 gap-8">
+        <section id="sobre" class="flex flex-col justify-center px-6 md:px-12 pb-10 gap-8">
             <h2 class="text-gray-900 dark:text-white text-4xl text-center mt-20">Sobre mim</h2>
             <p class="text-black dark:text-white font-normal text-justify text-lg">
                 Meu nome é Gustavo Chaves e sou desenvolvedor de software com foco em back-end. Atualmente estou terminando o ensino médio com uma formação de técnico em desenvolvimento de sistemas. Tenho ampla experiência na criação de aplicações utilizando Java, desde projetos simples com interface gráfica até APIs REST com Spring Boot, sempre utilizando as pŕaticas recomendadas do mercado de trabalho. Além disso, tenho contato com projetos de front-end e experiência com linguagens como Python, C++, Kotlin e PHP.
@@ -96,33 +104,33 @@
             </div>          
         </section>
 
-        <section id="projetos" class="flex flex-col justify-center px-12 pb-10">
+        <section id="projetos" class="flex flex-col justify-center px-6 md:px-12 pb-10">
             <h2 class="text-gray-900 dark:text-white text-4xl text-center mt-20">Projetos</h2>
             <div class="flex flex-row justify-evenly mt-6 gap-12 flex-wrap items-center">
                 <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-38">
                     <h3 class="text-white font-medium text-lg">Encurtador de URLs</h3>
                     <p class="text-white ">Projeto feito usando Spring Boot, MySQL e Thymeleaf</p>
-                    <a class="text-[#008000] " href="https://github.com/Gustavo7327/shorter-url-api">Visualizar Projeto</a>
+                    <a class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/shorter-url-api">Visualizar Projeto</a>
                 </article>
                 <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-38">
                     <h3 class="text-white font-medium text-lg">Piano Tutor</h3>
                     <p class="text-white ">Piano feito em C++ para arduino.</p>
-                    <a class="text-[#008000] " href="https://github.com/Gustavo7327/PianoTutor">Visualizar Projeto</a>
+                    <a class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/PianoTutor">Visualizar Projeto</a>
                 </article>
                 <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-38">
                     <h3 class="text-white font-medium text-lg">Calculadora IP</h3>
-                    <p class="text-white ">Calculadora feita em Kotlin para dispositivos móveis.</p>
-                    <a class="text-[#008000] " href="https://github.com/Gustavo7327/IPCalculator">Visualizar Projeto</a>
+                    <p class="text-white">Calculadora feita em Kotlin para dispositivos móveis.</p>
+                    <a class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/IPCalculator">Visualizar Projeto</a>
                 </article>
                 <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-38">
                     <h3 class="text-white font-medium text-lg">Bloqueador de Sites</h3>
                     <p class="text-white ">O projeto foi desenvolvido utilizando Qt em C++</p>
-                    <a class="text-[#008000] " href="https://github.com/Gustavo7327/WebsiteBlocker">Visualizar Projeto</a>
+                    <a class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/WebsiteBlocker">Visualizar Projeto</a>
                 </article>
                 <article class="flex flex-col justify-evenly bg-gray-800 p-4 rounded-lg w-100 h-38">
                     <h3 class="text-white font-medium text-lg">Vacine Já</h3>
                     <p class="text-white ">Projeto de Administração de Vacinas feito em PHP</p>
-                    <a class="text-[#008000] " href="https://github.com/Gustavo7327/Projeto-Vacina">Visualizar Projeto</a>
+                    <a class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/Projeto-Vacina">Visualizar Projeto</a>
                 </article>
             </div>      
         </section>
