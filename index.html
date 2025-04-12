@@ -58,8 +58,8 @@
         }
     </script>
 </head>
-<body class="bg-gray-300 text-gray-900 dark:bg-gray-900 dark:text-white font-[Poppins]">
-    <header class="flex items-center justify-center sticky top-0 bg-gray-300 dark:bg-gray-900 w-full">
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-[Poppins]">
+    <header class="flex items-center justify-center sticky top-0 bg-white dark:bg-gray-900 w-full">
         <div class="flex justify-between items-center p-4 h-20 w-full max-w-[850px] ">
             <img src="logo.svg" alt="" width="180" class="w-[180px] block" onclick="window.location.href='#hero'">
         
@@ -81,7 +81,7 @@
             </nav>
         
             <!-- Navegação mobile -->
-            <nav id="menu-mobile-links" class="fixed top-20 right-0 w-40  transform translate-y-[200vh] transition-transform duration-300 border-2 border-gray-500 rounded-md mr-5 bg-slate-200 dark:bg-[#1e2939]">
+            <nav id="menu-mobile-links" class="fixed top-20 right-0 w-40  transform translate-y-[200vh] transition-transform duration-300 border-2 border-gray-500 rounded-md mr-5 bg-gray-50 dark:bg-[#1e2939]">
                 <ul class="flex flex-col items-center gap-6 py-8">
                     <li class="link"><a href="#sobre" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors">Sobre</a></li>
                     <li class="link"><a href="#projetos" class="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors">Projetos</a></li>
@@ -115,8 +115,8 @@
                 Meu nome é Gustavo Chaves e sou desenvolvedor de software com foco em back-end. Atualmente estou terminando o ensino médio com uma formação de técnico em desenvolvimento de sistemas. Tenho ampla experiência na criação de aplicações utilizando Java, desde projetos simples com interface gráfica até APIs REST com Spring Boot, sempre utilizando as pŕaticas recomendadas do mercado de trabalho. Além disso, tenho contato com projetos de front-end e experiência com linguagens como Python, C++, Kotlin e PHP.
             </p>
             <div class="flex flex-row items-center justify-evenly flex-wrap gap-8">
-                <img src="https://github-readme-stats.vercel.app/api?username=Gustavo7327&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=shadow_green&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-                <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Gustavo7327&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=shadow_green&hide_border=false&order=2" height="150" alt="languages graph"/>
+                <img src="https://github-readme-stats.vercel.app/api?username=Gustavo7327&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=transparent&locale=en&hide_border=true&order=1&title_color=008000" height="150" alt="stats graph" class="border-green-700 border border-solid rounded-md"/>
+                <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Gustavo7327&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=transparent&hide_border=true&order=2&title_color=008000" height="150" alt="languages graph" class="border-green-700 border border-solid rounded-md"/>
             </div>
             <div class="flex flex-row flex-wrap items-center justify-center gap-8 mt-8">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo" class="w-16" />
@@ -156,30 +156,40 @@
         <section id="projetos" class="flex flex-col justify-center px-6 md:px-12 pb-10">
             <h2 class="text-gray-900 dark:text-white text-4xl text-center mt-20">Projetos</h2>
             <div class="flex flex-row justify-evenly mt-6 gap-12 flex-wrap items-center">
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Encurtador de URLs</h3>
                     <p class="text-stone-800 dark:text-white">Projeto feito usando Spring Boot, MySQL e Thymeleaf</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/shorter-url-api">Visualizar Projeto</a>
                 </article>
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Piano Tutor</h3>
-                    <p class="text-stone-800 dark:text-white">Piano feito em C++ para arduino.</p>
+                    <p class="text-stone-800 dark:text-white">Piano feito em C++ para arduino</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/PianoTutor">Visualizar Projeto</a>
                 </article>
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Calculadora IP</h3>
-                    <p class="text-stone-800 dark:text-white">Calculadora feita em Kotlin para dispositivos móveis.</p>
+                    <p class="text-stone-800 dark:text-white">Calculadora feita em Kotlin para dispositivos móveis</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/IPCalculator">Visualizar Projeto</a>
                 </article>
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Bloqueador de Sites</h3>
                     <p class="text-stone-800 dark:text-white">O projeto foi desenvolvido utilizando Qt em C++</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/WebsiteBlocker">Visualizar Projeto</a>
                 </article>
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Vacine Já</h3>
                     <p class="text-stone-800 dark:text-white">Projeto de Administração de Vacinas feito em PHP</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/Projeto-Vacina">Visualizar Projeto</a>
+                </article>
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                    <h3 class="text-stone-800 dark:text-white font-medium text-lg">Quiz-Game</h3>
+                    <p class="text-stone-800 dark:text-white">Projeto feito usando JavaFX</p>
+                    <a target="blank" class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/QuizGame">Visualizar Projeto</a>
+                </article>
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                    <h3 class="text-stone-800 dark:text-white font-medium text-lg">MessagesApp</h3>
+                    <p class="text-stone-800 dark:text-white">Comunicação cliente-servidor utilizando sockets do Java</p>
+                    <a target="blank" class="text-[#008000] hover:text-green-800" href="https://github.com/Gustavo7327/Messagesapp">Visualizar Projeto</a>
                 </article>
             </div>      
         </section>
@@ -188,62 +198,62 @@
         <section id="certificados" class="flex flex-col justify-center px-6 md:px-12 pb-10">
             <h2 class="text-gray-900 dark:text-white text-4xl text-center mt-20">Certificações</h2>
             <div class="flex flex-row justify-evenly mt-6 gap-12 flex-wrap items-center">
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
                     <p class="text-stone-800 dark:text-white">Curso sobre conceitos e recursos da AWS</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://www.credly.com/go/V9pU6KuG">Visualizar Certificado</a>
                 </article>
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Desenvolvimento Java com Cloud AWS</h3>
                     <p class="text-stone-800 dark:text-white">Curso focado em conceitos Java e introdução a AWS</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://hermes.dio.me/certificates/SCXBP4EG.pdf">Visualizar Certificado</a>
                 </article>
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Imersões da Alura</h3>
                     <p class="text-stone-800 dark:text-white">Certificados de participação em imersões Dev</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800 cursor-pointer" onclick="openModal('Alura')">Visualizar Certificados</a>
 
                     <!-- Modal Alura-->
-                    <div id="certificatesModalAlura" class="fixed inset-0 bg-gray-300 dark:bg-gray-900 flex flex-col items-center justify-evenly hidden overflow-auto">
+                    <div id="certificatesModalAlura" class="fixed inset-0 bg-white dark:bg-gray-900 flex flex-col items-center justify-evenly hidden overflow-auto">
                             <button class="absolute top-4 right-4 text-gray-900 dark:text-white font-bold text-3xl" onclick="closeModal('Alura')">X</button>
                             <div class="flex flex-col justify-evenly mt-12 gap-12 items-center">
-                                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
+                                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
                                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Imersão Python: Do Excel à Análise de Dados</h3>
                                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://drive.google.com/file/d/1zEVxloTya1YrW8Ig4S3z31axOkKpAlOZ/view?usp=drive_link">Visualizar Certificado</a>
                                 </article>
-                                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
+                                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
                                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Imersão Dev com Google Gemini</h3>
                                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://drive.google.com/file/d/18y-Inmo5d13MsWX-8RHWRDVFh1fJ7IbS/view?usp=sharing">Visualizar Certificado</a>
                                 </article>
-                                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
+                                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
                                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Imersão Dev 7° Edição</h3>
                                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://drive.google.com/file/d/1K0wY49O2leE8Cih-mzgH3_4-Tkep1fLi/view?usp=drive_link">Visualizar Certificado</a>
                                 </article>
-                                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
+                                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
                                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Imersão Front-end</h3>
                                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://drive.google.com/file/d/1oqrCi8-jfpDSGGBELgpxf9FtUuYloxT_/view?usp=drive_link">Visualizar Certificado</a>
                                 </article>
                             </div>
                     </div>
                 </article>
-                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
+                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-100 h-38">
                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Fundação Bradesco</h3>
                     <p class="text-stone-800 dark:text-white">Certificados da plataforma Fundação Bradesco</p>
                     <a target="blank" class="text-[#008000] hover:text-green-800 cursor-pointer" onclick="openModal('Bradesco')">Visualizar Certificados</a>
 
                     <!-- Modal Bradesco-->
-                    <div id="certificatesModalBradesco" class="fixed inset-0 bg-gray-300 dark:bg-gray-900 flex flex-col items-center justify-evenly hidden overflow-auto">
+                    <div id="certificatesModalBradesco" class="fixed inset-0 bg-white dark:bg-gray-900 flex flex-col items-center justify-evenly hidden overflow-auto">
                             <button class="absolute top-4 right-4 text-gray-900 dark:text-white font-bold text-3xl" onclick="closeModal('Bradesco')">X</button>
                             <div class="flex flex-col justify-evenly mt-12 gap-12 items-center">
-                                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
+                                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
                                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Introdução à Programação Orientada a Objetos</h3>
                                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://drive.google.com/file/d/1WNP_iZphBr87hlxC_wyigDtJCc0pa6vp/view?usp=drive_link">Visualizar Certificado</a>
                                 </article>
-                                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
+                                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
                                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Organização Pessoal</h3>
                                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://drive.google.com/file/d/1K5508Ijl8w72aqNMpcu4_r3HGQid05x0/view?usp=drive_link">Visualizar Certificado</a>
                                 </article>
-                                <article class="flex flex-col justify-evenly bg-slate-200 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
+                                <article class="flex flex-col justify-evenly bg-gray-50 dark:bg-gray-800 p-4 border-2 border-green-700 rounded-lg w-75 sm:w-100 h-38">
                                     <h3 class="text-stone-800 dark:text-white font-medium text-lg">Desenvolvimento Profissional</h3>
                                     <a target="blank" class="text-[#008000] hover:text-green-800" href="https://drive.google.com/file/d/1KAto0glJIwrrUQlBI3v4iSxJuXjmtNeM/view?usp=drive_link">Visualizar Certificado</a>
                                 </article>
