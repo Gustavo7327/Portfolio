@@ -1,4 +1,4 @@
-import React from "react";
+import { useLanguage } from "../i18n/LanguageProvider";
 
 const techBadges = [
   {
@@ -101,17 +101,19 @@ function TechTag({ name, url }) {
 }
 
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-16 px-4 md:px-12 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-4 text-center">Sobre</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center">{t("about.titulo")}</h2>
 
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-justify">
-          Sou desenvolvedor de software com experiência sólida em aplicações Java, desde interfaces gráficas até APIs REST com Spring Boot, sempre alinhado às boas práticas do mercado. Sou formado no curso técnico em desenvolvimento de sistemas e possuo uma experiência profissional de estágio com react native, além de projetos pessoais com destaque a PHP, Laravel, Java e Spring. Sou movido por desafios e por aprender continuamente, sempre buscando construir soluções bem estruturadas e eficientes. 
+          {t("about.descricao")}
         </p>
 
         <div>
-          <h3 className="text-xl font-semibold mb-3">Tecnologias e ferramentas</h3>
+          <h3 className="text-xl font-semibold mb-3">{t("about.tecnologias")}</h3>
           <div className="flex flex-wrap items-center">
             {techBadges.map((tech) => (
               <TechTag key={tech.name} name={tech.name} url={tech.url} />

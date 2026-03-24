@@ -1,17 +1,20 @@
+import { useLanguage } from "../i18n/LanguageProvider";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="w-screen h-screen flex flex-col md:flex-row items-center justify-between py-16 md:px-12 px-4 bg-gradient-to-r from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
 
       <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
-          Olá! Eu sou o Gustavo
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+          {t("hero.saudacao")}
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
-          Desenvolvedor de Software
+          {t("hero.ocupacao")}
         </p>
         <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-3 px-6 rounded-lg transition duration-300">
-          Entrar em Contato
+          {t("hero.contato")}
         </button>
       </div>
 
