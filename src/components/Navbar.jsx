@@ -1,7 +1,11 @@
 import Switch from "./Switch";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "../i18n/LanguageProvider";
 import "./../scripts/MenuMobile";
 
 export default function Navbar() {
+  const { t } = useLanguage();
+
   return (
     <header className="flex items-center justify-center sticky top-0 bg-white dark:bg-gray-800 w-full shadow-md z-10">
       <div className="flex justify-between items-center p-4 h-20 w-full max-w-[850px] ">
@@ -32,7 +36,7 @@ export default function Navbar() {
                 href="#sobre"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
-                Sobre
+                {t("navbar.about")}
               </a>
             </li>
             <li>
@@ -40,7 +44,7 @@ export default function Navbar() {
                 href="#projetos"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
-                Projetos
+                {t("navbar.projects")}
               </a>
             </li>
             <li>
@@ -48,7 +52,7 @@ export default function Navbar() {
                 href="#certificados"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
-                Certificados
+                {t("navbar.certifications")}
               </a>
             </li>
             <li>
@@ -56,7 +60,7 @@ export default function Navbar() {
                 href="#contato"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
-                Contato
+                {t("navbar.contact")}
               </a>
             </li>
           </ul>
@@ -72,7 +76,7 @@ export default function Navbar() {
                 href="#sobre"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
-                Sobre
+                {t("navbar.about")}
               </a>
             </li>
             <li className="link">
@@ -80,7 +84,7 @@ export default function Navbar() {
                 href="#projetos"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
-                Projetos
+                {t("navbar.projects")}
               </a>
             </li>
             <li className="link">
@@ -88,7 +92,7 @@ export default function Navbar() {
                 href="#certificados"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000]  transition-colors"
               >
-                Certificados
+                {t("navbar.certifications")}
               </a>
             </li>
             <li className="link">
@@ -96,19 +100,21 @@ export default function Navbar() {
                 href="#contato"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000]  transition-colors"
               >
-                Contato
+                {t("navbar.contact")}
               </a>
             </li>
             <li className="link md:hidden">
-              <div className="px-2">
+              <div className="flex gap-2 px-2">
                 <Switch />
+                <LanguageSwitcher />
               </div>
             </li>
           </ul>
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-2">
           <Switch />
+          <LanguageSwitcher />
         </div>
       </div>
     </header>
