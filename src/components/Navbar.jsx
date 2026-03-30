@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="flex items-center justify-center sticky top-0 bg-white dark:bg-gray-800 w-full shadow-md z-10">
       <div className="flex justify-between items-center p-4 h-20 w-full max-w-[850px] ">
-        <img src="/logo.svg" alt="Logo" className="size-36" onClick={() => window.location.href = "#hero"}/>
+        <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo" className="size-36" onClick={() => window.location.href = "#hero"}/>
         <button
           id="menu-mobile"
           className="md:hidden flex items-center justify-center w-10 h-10  text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-800 rounded-lg transition-colors"

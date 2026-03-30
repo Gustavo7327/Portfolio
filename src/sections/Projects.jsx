@@ -7,7 +7,7 @@ const mockProjects = [
   {
     id: 1,
     name: "Doeit",
-    image: "/projects/doeit.png",
+    image: `${import.meta.env.BASE_URL}projects/doeit.png`,
     githubLink: "https://github.com/Gustavo7327/Doeit",
     technologies: [
       { name: "PHP", url: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" },
@@ -21,7 +21,7 @@ const mockProjects = [
   {
     id: 2,
     name: "ByteTech",
-    image: "/projects/bytetech.png",
+    image: `${import.meta.env.BASE_URL}projects/bytetech.png`,
     githubLink: "https://github.com/Gustavo7327/ByteTech",
     technologies: [
       { name: "PHP", url: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" },
@@ -34,7 +34,7 @@ const mockProjects = [
   {
     id: 3,
     name: "cpcl-api",
-    image: "/projects/cpcl-api.png",
+    image: `${import.meta.env.BASE_URL}projects/cpcl-api.png`,
     githubLink: "https://github.com/Gustavo7327/cpcl-api", 
     technologies: [
       { name: "Java", url: "https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" },
@@ -46,7 +46,7 @@ const mockProjects = [
   {
     id: 4,
     name: "Piano Tutor",
-    image: "/projects/piano-tutor.png",
+    image: `${import.meta.env.BASE_URL}projects/piano-tutor.png`,
     githubLink: "https://github.com/Gustavo7327/PianoTutor", 
     technologies: [
       { name: "C++", url: "https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" },
@@ -56,7 +56,7 @@ const mockProjects = [
   {
     id: 5,
     name: "Vacine Já",
-    image: "/projects/vacine-ja.png",
+    image: `${import.meta.env.BASE_URL}projects/vacine-ja.png`,
     githubLink: "https://github.com/Gustavo7327/Projeto-Vacina", 
     technologies: [
       { name: "PHP", url: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" },
@@ -69,7 +69,7 @@ const mockProjects = [
   {
     id: 6,
     name: "Website Blocker",
-    image: "/projects/website-blocker.png",
+    image: `${import.meta.env.BASE_URL}projects/website-blocker.png`,
     githubLink: "https://github.com/Gustavo7327/WebsiteBlocker", 
     technologies: [
       { name: "C++", url: "https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" },
