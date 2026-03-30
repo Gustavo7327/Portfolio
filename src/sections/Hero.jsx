@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="relative">
           <div className="w-56 h-56 md:w-72 md:h-72 bg-blue-500 rounded-full flex items-center justify-center">
             <img
-              src="/foto.png" 
+              src={`${import.meta.env.BASE_URL}foto.png`}
               alt="Foto de Gustavo"
               className="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover"
             />
