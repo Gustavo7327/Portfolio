@@ -4,38 +4,15 @@ import { useLanguage } from "../i18n/LanguageProvider";
 const mockCertificates = [
   {
     id: 1,
-    title: "Desenvolvedor Full Stack Java e React",
-    issueDate: "Outubro de 2025",
-    concepts: [
-      "Programação Orientada a Objetos com Java",
-      "Criação de APIs RESTful com Spring Boot",
-      "Desenvolvimento de interfaces reativas com React",
-      "Gerenciamento de estado e Hooks",
-      "Integração de Front-end e Back-end",
-    ],
+    title: "Google Data Analytics Professional Certificate (v2)",
   },
   {
     id: 2,
-    title: "Arquitetura de Software e Clean Code",
-    issueDate: "Fevereiro de 2026",
-    concepts: [
-      "Princípios SOLID e boas práticas",
-      "Design Patterns (Padrões de Projeto)",
-      "Refatoração de código legado",
-      "Arquitetura Hexagonal e Clean Architecture",
-      "Testes Unitários e TDD",
-    ],
+    title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
   },
   {
     id: 3,
-    title: "Banco de Dados e Modelagem de Dados",
-    issueDate: "Novembro de 2024",
-    concepts: [
-      "Modelagem Relacional (Entidade-Relacionamento)",
-      "Queries avançadas em PostgreSQL e MySQL",
-      "Otimização de consultas e Índices",
-      "Introdução a bancos NoSQL com MongoDB",
-    ],
+    title: "Desenvolvimento Java com Cloud AWS",
   },
 ];
 
@@ -67,7 +44,7 @@ export default function Certifications() {
               
               <h3 className="text-xl font-bold mb-2 leading-tight">{cert.title}</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">
-                {t("certificates.issued_on") || "Emitido em:"} {cert.issueDate}
+                {t("certificates.issued_on") || "Emitido em:"} {t(`certificates.items.${cert.id}.issueDate`) || ""}
               </p>
               
               <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800">
@@ -111,7 +88,7 @@ export default function Certifications() {
 
               <h3 className="text-2xl md:text-3xl font-bold mb-2">{selectedCert.title}</h3>
               <p className="text-gray-500 dark:text-gray-400 mb-8 font-medium">
-                {t("certificates.issued_on") || "Emitido em:"} <span className="text-gray-700 dark:text-gray-300">{selectedCert.issueDate}</span>
+                {t("certificates.issued_on") || "Emitido em:"} <span className="text-gray-700 dark:text-gray-300">{t(`certificates.items.${selectedCert.id}.issueDate`) || ""}</span>
               </p>
 
               <div>
@@ -119,7 +96,7 @@ export default function Certifications() {
                   {t("certificates.modal.concepts") || "Conceitos Abordados"}
                 </h4>
                 <ul className="space-y-3">
-                  {selectedCert.concepts.map((concept, index) => (
+                  {(t(`certificates.items.${selectedCert.id}.concepts`) ?? []).map((concept, index) => (
                     <li key={index} className="flex items-start text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-3 mt-0.5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />

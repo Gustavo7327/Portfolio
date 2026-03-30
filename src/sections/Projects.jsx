@@ -6,36 +6,74 @@ import TechTag from "../components/TechTag";
 const mockProjects = [
   {
     id: 1,
-    name: "Projeto Genérico Alpha",
-    image: "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Projeto+Alpha",
-    description: "Uma descrição breve sobre o projeto Alpha. Aqui você explica qual foi o problema resolvido, a arquitetura utilizada e os desafios superados durante o desenvolvimento.",
-    githubLink: "https://github.com/seu-usuario/projeto-alpha",
+    name: "Doeit",
+    image: "/projects/doeit.png",
+    githubLink: "https://github.com/Gustavo7327/Doeit",
     technologies: [
-      { name: "Java", url: "https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" },
-      { name: "Spring", url: "https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" },
-      { name: "MySQL", url: "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" }
+      { name: "PHP", url: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" },
+      { name: "Laravel", url: "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" },
+      { name: "PostgreSQL", url: "https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" },
+      {name: "JavaScript", url: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" },
+      {name: "Git", url: "https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" },
+      {name: "Docker", url: "https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" }
     ]
   },
   {
     id: 2,
-    name: "Projeto Genérico Beta",
-    image: "https://via.placeholder.com/600x400/10B981/FFFFFF?text=Projeto+Beta",
-    description: "Descrição do projeto Beta. Este projeto focou no desenvolvimento frontend, consumindo APIs RESTful e garantindo alta performance e acessibilidade.",
-    githubLink: "https://github.com/seu-usuario/projeto-beta",
+    name: "ByteTech",
+    image: "/projects/bytetech.png",
+    githubLink: "https://github.com/Gustavo7327/ByteTech",
     technologies: [
-      { name: "React", url: "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" },
-      { name: "Tailwind CSS", url: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" }
+      { name: "PHP", url: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" },
+      { name: "Laravel", url: "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" },
+      { name: "Tailwind CSS", url: "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" },
+      {name: "MySQL", url: "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" },
+      {name: "JavaScript", url: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" },
     ]
   },
   {
     id: 3,
-    name: "Projeto Fechado Gamma",
-    image: "https://via.placeholder.com/600x400/8B5CF6/FFFFFF?text=Projeto+Gamma",
-    description: "Este é um exemplo de projeto privado (semelhante a um freela ou trabalho interno). Por isso, não possui botão/link para o GitHub.",
-    githubLink: null, 
+    name: "cpcl-api",
+    image: "/projects/cpcl-api.png",
+    githubLink: "https://github.com/Gustavo7327/cpcl-api", 
+    technologies: [
+      { name: "Java", url: "https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" },
+      { name: "Spring Boot", url: "https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" },
+      {name: "Spring Security", url: "https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white" },
+      {name: "SQL", url: "https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white" },
+    ]
+  },
+  {
+    id: 4,
+    name: "Piano Tutor",
+    image: "/projects/piano-tutor.png",
+    githubLink: "https://github.com/Gustavo7327/PianoTutor", 
+    technologies: [
+      { name: "C++", url: "https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" },
+      { name: "Arduino", url: "https://img.shields.io/badge/Arduino-00979C?style=for-the-badge&logo=arduino&logoColor=white" },
+    ]
+  },
+  {
+    id: 5,
+    name: "Vacine Já",
+    image: "/projects/vacine-ja.png",
+    githubLink: "https://github.com/Gustavo7327/Projeto-Vacina", 
     technologies: [
       { name: "PHP", url: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" },
-      { name: "Laravel", url: "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" }
+      {name: "MySQL", url: "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" },
+      {name: "JavaScript", url: "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" },
+      {name: "HTML", url: "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" },
+      {name: "CSS", url: "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" },
+    ]
+  },
+  {
+    id: 6,
+    name: "Website Blocker",
+    image: "/projects/website-blocker.png",
+    githubLink: "https://github.com/Gustavo7327/WebsiteBlocker", 
+    technologies: [
+      { name: "C++", url: "https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" },
+      { name: "Qt", url: "https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white" },
     ]
   }
 ];
@@ -61,7 +99,7 @@ export default function Projects() {
               <img 
                 src={project.image} 
                 alt={project.name} 
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover p-2"
               />
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold mb-4">{project.name}</h3>
@@ -108,7 +146,7 @@ export default function Projects() {
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{selectedProject.name}</h3>
               
               <p className="text-gray-600 dark:text-gray-300 mb-6 text-justify leading-relaxed">
-                {selectedProject.description}
+                {t(`projects.items.${selectedProject.id}.description`) || ""}
               </p>
 
               <div className="mb-8">
