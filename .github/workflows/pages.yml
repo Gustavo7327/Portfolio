@@ -40,6 +40,9 @@ jobs:
           mkdir -p docs
           cp -r dist/* docs/
 
+      - name: Create .nojekyll
+        run: touch docs/.nojekyll
+
       - name: Commit and push docs
         run: |
           git config user.name "github-actions[bot]"
