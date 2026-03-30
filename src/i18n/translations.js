@@ -16,6 +16,25 @@ export const translations = {
       description:
         "Sou desenvolvedor de software com experiência sólida em aplicações Java, desde interfaces gráficas até APIs REST com Spring Boot, sempre alinhado às boas práticas do mercado. Sou formado no curso técnico em desenvolvimento de sistemas e possuo uma experiência profissional de estágio com React Native, além de projetos pessoais com destaque a PHP, Laravel, Java e Spring. Sou movido por desafios e por aprender continuamente, sempre buscando construir soluções bem estruturadas e eficientes.",
       technologies: "Tecnologias e ferramentas",
+      experience: {
+        title: "Formações e Experiências",
+        education: {
+          1: {
+            title: "Técnico em Desenvolvimento de Sistemas",
+            institution: "EEEP Professora Maria Célia Pinheiro Falcão",
+            period: "Fevereiro de 2023 - Dezembro de 2025",
+            description: "Formação técnica que abrange uma ampla gama de conhecimentos em desenvolvimento de software, incluindo linguagens de programação, bancos de dados, desenvolvimento web, análise de requisitos e práticas ágeis. O curso é projetado para preparar os alunos para o mercado de trabalho, proporcionando uma base sólida em conceitos fundamentais e habilidades práticas essenciais para o desenvolvimento de sistemas eficientes e bem estruturados."
+          }
+        },
+        experience: {
+          1: {
+            title: "Desenvolvedor de software - Estágio",
+            institution: "Agility Soluções",
+            period: "Agosto de 2025 - Dezembro de 2025",
+            description: "Como parte do curso técnico, o estágio serve como uma imersão prática no mercado de trabalho para aplicar os conhecimentos adquiridos. Atuei no desenvolvimento de soluções móveis utilizando React Native e Expo, focando na construção de interfaces intuitivas e responsivas. Fui responsável pela implementação de novas funcionalidades, integração com APIs e execução de testes para rastreamento e correção de bugs, assegurando a qualidade e o bom funcionamento dos aplicativos."
+          }
+        }
+      }
     },
     projects: {
       title: "Meus Projetos",
@@ -163,6 +182,25 @@ export const translations = {
       description:
         "I am a software developer with strong experience in Java applications, from graphical interfaces to REST APIs with Spring Boot, always aligned with industry best practices. I have completed a technical course in systems development and have professional internship experience with React Native, as well as personal projects highlighting PHP, Laravel, Java, and Spring. I thrive on challenges and continuous learning, always aiming to build well-structured and efficient solutions.",
       technologies: "Technologies and tools",
+      experience: {
+        title: "Education and Experience",
+        education: {
+          1: {
+            title: "Technical Course in Systems Development",
+            institution: "EEEP Professora Maria Célia Pinheiro Falcão",
+            period: "February 2023 - December 2025",
+            description: "Technical training that covers a wide range of knowledge in software development, including programming languages, databases, web development, requirements analysis, and agile practices. The course is designed to prepare students for the job market, providing a solid foundation in fundamental concepts and practical skills essential for developing efficient and well-structured systems."
+          }
+        },
+        experience: {
+          1: {
+            title: "Software Developer - Intern",
+            institution: "Agility Soluções",
+            period: "August 2025 - December 2025",
+            description: "As part of the technical course, the internship serves as a practical immersion in the job market to apply the acquired knowledge. I worked on developing mobile solutions using React Native and Expo, focusing on creating intuitive and responsive interfaces. I was responsible for implementing new features, integrating with APIs, and running tests for tracking and fixing bugs, ensuring quality and proper functioning of the applications."
+          }
+        }
+      }
     },
     projects: {
       title: "My Projects",

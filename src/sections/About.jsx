@@ -101,6 +101,40 @@ export default function About() {
             ))}
           </div>
         </div>
+
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold mb-8 text-center">{t("about.experience.title")}</h3>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+              <h4 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Educação</h4>
+              <div className="space-y-6">
+                {Object.values(t("about.experience.education") || {}).map((edu, index) => (
+                  <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+                    <h5 className="text-lg font-bold mb-2">{edu.title}</h5>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{edu.institution}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{edu.period}</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed">{edu.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold mb-4 text-green-600 dark:text-green-400">Experiência</h4>
+              <div className="space-y-6">
+                {Object.values(t("about.experience.experience") || {}).map((exp, index) => (
+                  <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-sm">
+                    <h5 className="text-lg font-bold mb-2">{exp.title}</h5>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{exp.institution}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{exp.period}</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-justify leading-relaxed">{exp.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
