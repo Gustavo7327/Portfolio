@@ -86,7 +86,7 @@ export default function Projects() {
   const closeModal = () => setSelectedProject(null);
 
   return (
-    <section className="py-16 px-4 md:px-12 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-100 min-h-screen">
+    <section id="projects" className="py-16 px-4 md:px-12 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-100 min-h-screen">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-10 text-center">{t("projects.title") || "Meus Projetos"}</h2>
 

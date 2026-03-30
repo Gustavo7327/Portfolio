@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="flex items-center justify-center sticky top-0 bg-white dark:bg-gray-800 w-full shadow-md z-10">
       <div className="flex justify-between items-center p-4 h-20 w-full max-w-[850px] ">
-        <img src="/logo.svg" alt="Logo" className="size-36" />
+        <img src="/logo.svg" alt="Logo" className="size-36" onClick={() => window.location.href = "#hero"}/>
         <button
           id="menu-mobile"
           className="md:hidden flex items-center justify-center w-10 h-10  text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-800 rounded-lg transition-colors"
@@ -33,7 +33,7 @@ export default function Navbar() {
           <ul className="flex flex-row justify-between text-lg text-gray-900 dark:text-white pr-4 space-x-12">
             <li>
               <a
-                href="#sobre"
+                href="#about"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
                 {t("navbar.about")}
@@ -41,7 +41,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#projetos"
+                href="#projects"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
                 {t("navbar.projects")}
@@ -49,7 +49,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#certificados"
+                href="#certifications"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
                 {t("navbar.certifications")}
@@ -57,7 +57,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#contato"
+                href="#contact"
                 className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
                 {t("navbar.contact")}
@@ -73,7 +73,7 @@ export default function Navbar() {
           <ul className="flex flex-col items-center gap-6 py-8">
             <li className="link">
               <a
-                href="#sobre"
+                href="#about"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
                 {t("navbar.about")}
@@ -81,7 +81,7 @@ export default function Navbar() {
             </li>
             <li className="link">
               <a
-                href="#projetos"
+                href="#projects"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors"
               >
                 {t("navbar.projects")}
@@ -89,7 +89,7 @@ export default function Navbar() {
             </li>
             <li className="link">
               <a
-                href="#certificados"
+                href="#certifications"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000]  transition-colors"
               >
                 {t("navbar.certifications")}
@@ -97,7 +97,7 @@ export default function Navbar() {
             </li>
             <li className="link">
               <a
-                href="#contato"
+                href="#contact"
                 className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000]  transition-colors"
               >
                 {t("navbar.contact")}

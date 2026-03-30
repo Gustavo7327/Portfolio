@@ -4,7 +4,7 @@ export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="w-screen h-screen flex flex-col md:flex-row items-center justify-between py-16 md:px-12 px-4 bg-gradient-to-r from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
+    <section id="hero" className="w-screen h-screen flex flex-col md:flex-row items-center justify-between py-16 md:px-12 px-4 bg-gradient-to-r from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
 
       <div className="flex-1 text-center md:text-left mb-8 md:mb-0">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
@@ -13,9 +13,12 @@ export default function Hero() {
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
           {t("hero.occupation")}
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-3 px-6 rounded-lg transition duration-300">
+        <a
+          href="#contact"
+          className="inline-flex bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg py-3 px-6 rounded-lg transition duration-300"
+        >
           {t("hero.contact")}
-        </button>
+        </a>
       </div>
 
       <div className="flex-1 flex justify-center md:justify-end">

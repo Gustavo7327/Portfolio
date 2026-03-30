@@ -85,7 +85,7 @@ export default function About() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 px-4 md:px-12 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+    <section id="about" className="py-16 px-4 md:px-12 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-4 text-center">{t("about.title")}</h2>
 

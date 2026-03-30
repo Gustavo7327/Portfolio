@@ -24,7 +24,7 @@ export default function Certifications() {
   const closeModal = () => setSelectedCert(null);
 
   return (
-    <section className="py-16 px-4 md:px-12 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+    <section id="certifications" className="py-16 px-4 md:px-12 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-10 text-center">
           {t("certificates.title")}
