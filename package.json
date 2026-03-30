@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "pnpm run build && rm -rf docs && mkdir -p docs && cp -r dist/* docs/",
+    "deploy": "pnpm run predeploy && git add docs && git commit -m 'Deploy to GitHub Pages (main/docs)' || echo 'No changes to commit' && git push origin main",
     "lint": "eslint .",
     "preview": "vite preview"
   },
