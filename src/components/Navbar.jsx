@@ -32,10 +32,26 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   return (
     <header className="flex items-center justify-center sticky top-0 bg-white dark:bg-gray-800 w-full shadow-md z-10">
       <div className="flex justify-between items-center p-4 h-20 w-full max-w-[850px] ">
-        <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Logo" className="size-36" onClick={() => window.location.href = "#hero"}/>
+        <img
+          src={`${import.meta.env.BASE_URL}logo.svg`}
+          alt="Logo"
+          className="size-36"
+          onClick={() => (window.location.href = "#hero")}
+        />
         <button
           id="menu-mobile"
           onClick={handleBtnClick}
@@ -96,11 +112,11 @@ export default function Navbar() {
         <nav
           ref={menuMobileRef}
           id="menu-mobile-links"
-          className={`fixed top-20 right-0 w-40 z-50 transform transition-transform duration-300 border-2 border-gray-500 rounded-md mr-5 bg-gray-50 dark:bg-[#1e2939] ${
-            isOpen ? "translate-y-0" : "translate-y-[200vh]"
+          className={`fixed top-0 right-0 w-40 z-50 h-screen transform transition-transform duration-300 border-l-2 dark:border-gray-700 border-gray-400 bg-gray-50 dark:bg-[#1e2939] ${
+            isOpen ? "translate-x-0" : "translate-x-[200vw]"
           }`}
         >
-          <ul className="flex flex-col items-center gap-6 py-8">
+          <ul className="flex flex-col items-center gap-6 py-8 mt-4">
             <li className="link" onClick={handleLinkClick}>
               <a
                 href="#about"
@@ -147,6 +163,14 @@ export default function Navbar() {
           <LanguageSwitcher />
         </div>
       </div>
+
+      <div
+        className={`
+          fixed inset-0 bg-black/40 z-40 md:hidden transition-opacity duration-500 ease-in-out
+          ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}
+        `}
+        onClick={handleLinkClick}
+      />
     </header>
   );
 }
