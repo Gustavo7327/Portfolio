@@ -49,7 +49,7 @@ export default function Navbar() {
         <img
           src={`${import.meta.env.BASE_URL}logo.svg`}
           alt="Logo"
-          className="size-36"
+          className="h-6"
           onClick={() => (window.location.href = "#hero")}
         />
         <button
@@ -77,7 +77,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#about"
-                className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
+                className="hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.about")}
               </a>
@@ -85,7 +85,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#projects"
-                className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
+                className="hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.projects")}
               </a>
@@ -93,7 +93,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#certifications"
-                className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
+                className="hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.certifications")}
               </a>
@@ -101,7 +101,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#contact"
-                className="hover:text-green-700 dark:hover:text-[#008000] transition-colors"
+                className="hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.contact")}
               </a>
@@ -120,7 +120,7 @@ export default function Navbar() {
             <li className="link" onClick={handleLinkClick}>
               <a
                 href="#about"
-                className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors"
+                className="text-gray-900 dark:text-white text-xl hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.about")}
               </a>
@@ -128,7 +128,7 @@ export default function Navbar() {
             <li className="link" onClick={handleLinkClick}>
               <a
                 href="#projects"
-                className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000] transition-colors"
+                className="text-gray-900 dark:text-white text-xl hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.projects")}
               </a>
@@ -136,7 +136,7 @@ export default function Navbar() {
             <li className="link" onClick={handleLinkClick}>
               <a
                 href="#certifications"
-                className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000]  transition-colors"
+                className="text-gray-900 dark:text-white text-xl hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.certifications")}
               </a>
@@ -144,7 +144,7 @@ export default function Navbar() {
             <li className="link" onClick={handleLinkClick}>
               <a
                 href="#contact"
-                className="text-gray-900 dark:text-white text-xl hover:text-green-700 dark:hover:text-[#008000]  transition-colors"
+                className="text-gray-900 dark:text-white text-xl hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 {t("navbar.contact")}
               </a>
