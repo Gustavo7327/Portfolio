@@ -18,6 +18,8 @@ export const translations = {
       technologies: "Tecnologias e ferramentas",
       experience: {
         title: "Formações e Experiências",
+        educationTitle: "Formação",
+        experienceTitle: "Experiência",
         education: {
           1: {
             title: "Técnico em Desenvolvimento de Sistemas",
@@ -160,6 +162,8 @@ export const translations = {
     contact: {
       title: "Contato",
       description: "Sinta-se à vontade para entrar em contato ou acompanhar meus repositórios e redes profissionais.",
+      button: "Copiar e-mail",
+      copied: "E-mail copiado!"
     },
     footer: {
         copyright: "Todos os direitos reservados.",
@@ -184,6 +188,8 @@ export const translations = {
       technologies: "Technologies and tools",
       experience: {
         title: "Education and Experience",
+        educationTitle: "Education",
+        experienceTitle: "Experience",
         education: {
           1: {
             title: "Technical Course in Systems Development",
@@ -326,6 +332,8 @@ export const translations = {
     contact: {
       title: "Contact",
       description: "Feel free to reach out or follow my repositories and professional networks.",
+      button: "Copy email",
+      copied: "Email copied!"
     },
     footer: {
         copyright: "All rights reserved.",

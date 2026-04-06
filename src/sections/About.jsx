@@ -107,7 +107,7 @@ export default function About() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Educação</h4>
+              <h4 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">{t("about.experience.educationTitle")}</h4>
               <div className="space-y-6">
                 {Object.values(t("about.experience.education") || {}).map((edu, index) => (
                   <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-sm">
@@ -121,7 +121,7 @@ export default function About() {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4 text-green-600 dark:text-green-400">Experiência</h4>
+              <h4 className="text-xl font-semibold mb-4 text-green-600 dark:text-green-400">{t("about.experience.experienceTitle")}</h4>
               <div className="space-y-6">
                 {Object.values(t("about.experience.experience") || {}).map((exp, index) => (
                   <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-sm">
